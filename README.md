@@ -21,6 +21,8 @@ called once.
 
 Usage is the same as with any other event in jQuery:
 ```js
+$(selector).addClass("cool-animation");
+
 $(selector).one("transitionsend", function()
 {
 	// do something here
