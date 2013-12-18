@@ -1,6 +1,6 @@
 #jquery.transitionsend
 
-> Execute a callback when *all* transitions have ended.
+> Execute a callback when *all* CSS transitions have ended.
 
 ## Getting Started
 
