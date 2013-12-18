@@ -11,9 +11,13 @@ The `transitionsend` event is similar to the standard `transitionend` event, exc
 This plugin has been built to work with jQuery's [`on()`](http://api.jquery.com/on/), [`one()`](http://api.jquery.com/one/) and [`off()`](http://api.jquery.com/off/) functions instead of
 a unique API. This **allows for abstraction**.
 
-For browsers that do not support CSS transitions, the event will be dispatched immediately without delay.
+- - -
+The event will be dispatched immediately without delay in these situations:
+* Elements with no CSS transitions applied
+* Browsers that do not support CSS transitions
 
-Current technology prohibits this plugin's ability to detect when a transition has been cancelled (by means of CSS changes or other). You will have to keep track of such things yourself.
+- - -
+*Note*: Current technology prohibits the ability to detect when a transition has been cancelled (by means of CSS or other). You will have to keep track of such things yourself.
 
 ## Usage
 ### Overview
