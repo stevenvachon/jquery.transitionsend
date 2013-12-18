@@ -24,7 +24,7 @@ The event will be dispatched immediately without delay in these situations:
 It is recommended that you use `jQuery.one()` instead of `jQuery.on()` because the callback will only be
 triggered once.
 ```js
-$(selector).addClass("cool-animation");
+$(selector).addClass("cool-transition");
 
 $(selector).one("transitionsend", function()
 {
@@ -38,7 +38,10 @@ $(selector).off("transitionsend");
 ### Repaint
 A `repaint`—or "reflow" or "redraw" or "rerender"—function is also included. It goes by many names, but the browsers call it "paint". It is useful when adding a transition `className` to your newly created element and actually having it display what you expect.
 ```javascript
-$(selector).repaint();
+$("body").html('<div id="something"/>');
+$("#something").repaint();
+$("#something").addClass("cool-transition");
+// it animates!
 ```
 
 ## Release History
