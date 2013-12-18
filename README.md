@@ -16,10 +16,9 @@ For browsers that do not support CSS transitions, the event will be triggered im
 Current technology prohibits this plugin's ability to detect when a transition has been cancelled (by means of CSS changes or other). You will have to keep track of such things yourself.
 
 ## Usage
+### Overview
 It is recommended that you use `jQuery.one()` instead of `jQuery.on()` because the callback will only be
 called once.
-
-Usage is the same as with any other event in jQuery:
 ```js
 $(selector).addClass("cool-animation");
 
@@ -30,6 +29,12 @@ $(selector).one("transitionsend", function()
 
 // Cancel event
 $(selector).off("transitionsend");
+```
+
+### Repaint
+A `repaint`—or "reflow" or "redraw" or "rerender"—function is also included. It goes by many names, but the browsers call it "paint". It is useful when adding adding a transition `className` to your newly created element and actually having it display what you expect.
+```javascript
+$(selector).repaint();
 ```
 
 ## Release History
