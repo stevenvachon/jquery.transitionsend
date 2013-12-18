@@ -6,8 +6,7 @@
 
 This plugin requires jQuery `~1.7.0`
 
-The `transitionsend` event is similar to the standard `transitionend` event, except that it will only ever be called once. This is
-especially useful when you are transitioning more than one property on any given element.
+The `transitionsend` event is similar to the standard `transitionend` event, except that it will only ever be called once—instead of once *per property*. This is especially useful for advanced animation where you are transitioning more than one property on any given element.
 
 This plugin has been built to work with jQuery's [`on()`](http://api.jquery.com/on/), [`one()`](http://api.jquery.com/one/) and [`off()`](http://api.jquery.com/off/) functions instead of
 a unique API. This allows for abstraction.
@@ -20,8 +19,7 @@ Current technology limits this plugin's ability to detect if a transition has be
 It is recommended that you use `jQuery.one()` instead of `jQuery.on()` because the callback will only be
 called once.
 
-Usage is the same as with any other event in jQuery.
-
+Usage is the same as with any other event in jQuery:
 ```js
 $(selector).one("transitionsend", function()
 {
