@@ -14,7 +14,7 @@ a unique API. This allows for abstraction.
 
 For browsers that do not support CSS transitions, the event will be triggered immediately without delay.
 
-Current technology limits this plugin's ability to detect if a transition has been (cancelled by means of CSS changes or other). You will have to keep track of such things yourself.
+Current technology limits this plugin's ability to detect if a transition has been cancelled (by means of CSS changes or other). You will have to keep track of such things yourself.
 
 ## Usage
 It is recommended that you use `jQuery.one()` instead of `jQuery.on()` because the callback will only be
