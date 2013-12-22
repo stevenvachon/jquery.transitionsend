@@ -7,7 +7,7 @@
  */
 
 (function($)
-{
+{rep
 	var off_super = $.fn.off;
 	var on_super  = $.fn.on;
 	
@@ -217,7 +217,7 @@
 	
 	
 	
-	$.fn.repaint = function()
+	$.fn.reflow = function()
 	{
 		$(this).each(function()
 		{
