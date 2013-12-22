@@ -35,14 +35,15 @@ $(selector).one("transitionsend", function()
 $(selector).off("transitionsend");
 ```
 
-### Repaint
-A `repaint`—or "reflow" or "redraw" or "rerender"—function is also included. It goes by many names, but the browsers call it "paint". It is useful when adding a transition `className` to your newly created element and actually having it display what you expect.
+### Reflow
+A `reflow` function is also included. It "relayouts" elements, preparing them for an immediate repaint (or "rerender"). It comes in handy when adding a transition `className` to your newly created element and actually having the transition play.
 ```javascript
 $("body").html('<div id="something"/>');
-$("#something").repaint();
+$("#something").reflow();
 $("#something").addClass("cool-transition");
 // it animates!
 ```
 
 ## Release History
+* 0.1.1 renamed `repaint` to `reflow`
 * 0.1.0 initial release
