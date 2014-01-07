@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-This plugin requires jQuery `~1.7.0`
+This plugin requires jQuery `~1.7.0` or Zepto `~1.1.2`
 
 The `transitionsend` event is similar to the standard `transitionend` event, except that it is **only called once**—instead of once *per property*. This is especially useful for **advanced animation** where you are transitioning more than one property on any given element.
 
@@ -45,5 +45,6 @@ $("#something").addClass("cool-transition");
 ```
 
 ## Release History
+* 0.1.2 added Zepto support
 * 0.1.1 renamed `repaint` to `reflow`
 * 0.1.0 initial release

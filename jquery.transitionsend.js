@@ -1,5 +1,5 @@
 /**
- * jquery.transitionsend v0.1
+ * jquery.transitionsend v0.1.2
  * https://github.com/stevenvachon/jquery.transitionsend/
  *
  * Licensed under the MIT license.
@@ -124,12 +124,12 @@
 	
 	$.fn.off = function(types, selector, fn)
 	{
-		// jQuery.Event -- copied from jQuery 2.0.3
+		// jQuery.Event -- copied from jQuery 2.0.3 -- slightly modified
 		if (types && types.preventDefault && types.handleObj)
 		{
 			var handleObj = types.handleObj;
 			
-			jQuery(types.delegateTarget).off
+			$(types.delegateTarget).off
 			(
 				handleObj.namespace ? handleObj.origType + "." + handleObj.namespace : handleObj.origType,
 				handleObj.selector,
@@ -227,4 +227,4 @@
 	
 	
 	
-})(jQuery);
+})(window.jQuery || window.Zepto);
