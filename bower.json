@@ -1,0 +1,28 @@
+{
+  "name": "jquery.transitionsend",
+  "version": "0.2.0",
+  "homepage": "https://github.com/stevenvachon/jquery.transitionsend",
+  "authors": [
+    "Steven Vachon <contact@svachon.com>"
+  ],
+  "description": "Execute a callback when ALL css transitions have ended.",
+  "main": "jquery.transitionsend.js",
+  "keywords": [
+    "transition",
+    "transitionsend",
+    "animation",
+    "css",
+    "jquery",
+    "requirejs",
+    "amd",
+    "zepto"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

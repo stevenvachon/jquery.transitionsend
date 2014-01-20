@@ -1,12 +1,12 @@
 /**
- * jquery.transitionsend v0.1.2
+ * jquery.transitionsend v0.2.0
  * https://github.com/stevenvachon/jquery.transitionsend/
  *
  * Licensed under the MIT license.
  * Copyright 2013 Steven Vachon
  */
 
-(function($)
+var self = function($)
 {
 	var off_super = $.fn.off;
 	var on_super  = $.fn.on;
@@ -62,7 +62,7 @@
 					elements.each(function(i)
 					{
 						var $this = $(this);
-						var properties = $this.css("transition-property").split(/,\s*/);
+						var properties = $this.css("transition-property").split(/,\s*/);	// TODO add .css() check for jquery-lite's
 						var durations  = parseTimes( $this.css("transition-duration") );
 						var delays     = parseTimes( $this.css("transition-delay") );
 						
@@ -79,7 +79,7 @@
 						}
 						
 						// If element removed by the time this runs, it'll just get GC'ed
-						$this.data("transitionsend-timeout", setTimeout( $.proxy(function()
+						$this.data("transitionsend-timeout", setTimeout( $.proxy(function()	// TODO add check for .data() for jquery-lite's
 						{
 							$(this).trigger("transitionsend");
 						},
@@ -224,7 +224,15 @@
 			this.offsetHeight;
 		});
 	}
-	
-	
-	
-})(window.jQuery || window.Zepto);
+}
+
+
+
+if (typeof define === "function" && define.amd)
+{
+	define(["jquery"], self);
+}
+else
+{
+	self(window.jQuery || window.Zepto);
+}

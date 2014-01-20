@@ -45,6 +45,7 @@ $("#something").addClass("cool-transition");
 ```
 
 ## Release History
+* 0.2.0 added AMD support
 * 0.1.2 added Zepto support
 * 0.1.1 renamed `repaint` to `reflow`
 * 0.1.0 initial release
