@@ -49,3 +49,7 @@ $("#something").addClass("cool-transition");
 * 0.1.2 added Zepto support
 * 0.1.1 renamed `repaint` to `reflow`
 * 0.1.0 initial release
+
+---
+
+[![Analytics](https://ga-beacon.appspot.com/UA-3614308-9/stevenvachon/jquery.transitionsend)](https://github.com/igrigorik/ga-beacon "Google Analytics") [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/stevenvachon/jquery.transitionsend/trend.png)](https://bitdeli.com/free)
